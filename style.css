@@ -11,16 +11,17 @@ nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 21%;
+  padding: 21px 21%;
 }
 .logo-name{
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
 }
 .heading-logo{
-  width: 80px;
+  width: 40px;
   height: auto;
+  padding: 0px;
 }
 .nav-links{
   display: flex;
@@ -30,17 +31,6 @@ nav{
 nav a{
   text-decoration: none;
   color: #10192e;
-}
-.nav-hire{
-  background-color: #2563eb;
-  color: white;
-  padding: 8px 21px;
-  border-radius: 999px;
-}
-.nav-hire:hover{
-  background-color: white;
-  color: #2563eb;
-  border: solid 1px #2563eb;
 }
 header hr{
   border: none;
@@ -264,12 +254,13 @@ header hr{
 }
 .contact-section a{
   color: white;
-  padding: 12px 24px;
   border-radius: 999px;
   text-decoration: none;
+  padding: 12px 24px;
 }
 .top-button{
   border: solid 1px #e5e7eb;
+  
 }
 .top-button:hover{
   background-color: #283043;
@@ -277,6 +268,7 @@ header hr{
 .email-button{
   background-color: #2563eb;
   border:none;
+  
 }
 .email-button:hover{
   background-color: transparent;
@@ -305,51 +297,79 @@ header hr{
   color: #10192e;
   font-size: 14px;
 }
-/* @media (max-width: 758px){
-  nav{
-    padding: 16px 8%;
-    flex-wrap: wrap;
-    gap: 16px;
 
+@media (max-width: 767px){
+  nav{
+    flex-direction: column;
+    gap: 20px;
+    padding-bottom: 10px;
   }
-  .nav-links{
-    flex-wrap: wrap;
-  }
-  .hero,.about-descriptions {
+  .hero{
     flex-direction: column;
   }
-  .skills-grid, .project-grid {
-    grid-template-columns: 1fr;
-  }
-  .hero, .sections-template {
-    padding-left: 8%;
-    padding-right: 8%;
-  }
-  .contact-description {
-    margin: 16px auto 0;
-  }
-
-  .contact-section, .contact-card, .contact-button{
-    flex-wrap: wrap;
-  
-  }
-  .footer-section{
-    flex-wrap: wrap;
-    margin: 0 8%;
-    gap: 16px;
+  .desc-texts{
     text-align: center;
   }
-  .footer-name{
-    margin-left: 100px;
-    margin-bottom: 0px;
+  .hero-label{
+    margin-inline: auto;
   }
-  .footer-credits{
-    margin-left: 28px;
+  .hero-buttons{
+    justify-content: center;
   }
-  .footer-links{
-    margin-left: 50px;
-  } */
-/* }  */
+  .desc-image{
+    width: 320px;
+  }
+  .hero h1{
+    font-size:68px; 
+  }
+  .about-heading{
+    text-align: center;
+  }
+  .about-descriptions{
+    flex-direction: column;
+    text-align: center;
+  }
+  .skills-heading{
+    text-align: center;
+  }
+  .skills-grid{
+    grid-template-columns: 1fr;
+  }
+  .sections-template{
+    padding: 56px 30px;
+  }
+  .project-grid{
+    grid-template-columns: 1fr;
+  }
+  .contact-card{
+    text-align: center;
+    padding: 80px 22px;
+  }
+  .contact-card h2{
+    font-size: 28px;
+  }
+  .contact-button{
+    flex-direction: column;
+  }
+  .contact-description{
+    margin: 16px 16px 16px 16px;
+    font-size: 14px;
+  }
+  .email-button{
+    font-size: 13px;
+  }
+  .top-button{
+    font-size: 13px;
+    align-self: center;
+  }
+  .footer-section{
+    margin:0px;
+    padding-top:16px;
+    flex-direction: column;
+  }
+}
+
+
 
 
 
