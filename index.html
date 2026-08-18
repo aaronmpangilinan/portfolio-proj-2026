@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <title>AMP | Portfolio</title>
 </head>
@@ -12,14 +15,17 @@
 
   <!-- NAVIGATION BAR -->
     <nav>
-      <a href="#home">Aaron.Pangilinan</a>
+      <div class="logo-name">
+        <a href="#home"><img class="heading-logo"src="images/aaron-ap-logo.png" alt="aaron-logo"></a>
+      <a href="#home"><strong>Aaron.Pangilinan</strong></a>
+      </div>
       <div class="nav-links">
         <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
+        <!-- <a href="#education">Education</a> -->
         <a href="#contact">Contact</a>
-        <a class="nav-cta" href="#contact">Hire me</a>
+        <a class="nav-hire" href="#contact">Hire me</a>
       </div>
     </nav>
     <hr>
@@ -38,15 +44,15 @@
         </div>
       </div>
 
-      <div class="image-place">
-        <img class="desc-image" src="images/photo-1626785774573-4b799315345d.avif" alt="Aaron-image">
-      </div>
+      <!-- <div class="image-place"> -->
+        <img class="desc-image" src="images/main_image.jpeg" alt="Aaron-image">
+      <!-- </div> -->
     </section>
 
-    <section id="about" class="about-sect">
+    <section id="about" class="about-sect sections-template">
       <div class="about-heading">
-        <p class="about-label">ABOUT ME</p>
-        <h2 class="about-sub-title">A little about how I work</h2>
+        <p class="sections-label">ABOUT ME</p>
+        <h2 class="sections-sub-title">A little about how I work</h2>
       </div>
       <div class="about-descriptions">
         <p>I sit right between logic and story. As a Computer Science student I enjoy breakinsg problems down and building things that are clean and usable. As a video editor I care about rhythm, clarity, and making a message land in the first three seconds.</p>
@@ -56,81 +62,124 @@
     
     </section>
 
-    <section id="skills">
-      <p>SKILLS</p>
-      <h2>What I bring to the table</h2>
+    <section id="skills" class="skills-sec sections-template">
+      <div class="skills-heading">
+        <p class="sections-label">SKILLS</p>
+        <h2 class="sections-sub-title">What I bring to the table</h2>
+      </div>
       <div class="skills-grid">
-
         <div class="skill-card">
-          <h3>Video Editing</h3>
-          <p>Cutting, color grading, motion titles and sound design for social and long-form content.</p>
-          <ul>
-            <li>Premiere Pro</li>
-            <li>After Effects</li>
-            <li>DaVinci Resolve</li>
-            <li>Capcut</li>
-          </ul>
+          <h3 class="skills-title-card">Video Editing</h3>
+          <p class="skills-description-card">Cutting, color grading, motion titles and sound design for social and long-form content.</p>
+            <ul class="skills-tools">
+              <li>Premiere Pro</li>
+              <li>After Effects</li>
+              <li>DaVinci Resolve</li>
+              <li>Capcut</li>
+            </ul>
         </div>
 
         <div class="skill-card">
-          <h3>Programming</h3>
-          <p>Building small web apps and solving problems across the CS curriculum.</p>
-          <ul>
+          <h3 class="skills-title-card">Programming</h3>
+          <p class="skills-description-card">Building small web apps and solving problems across the CS curriculum.</p>
+          <ul class="skills-tools">
             <li>Python</li>
             <li>Java</li>
-            <li>JavaScript</li>
-            <li>Php</li>
+            <li>AWS</li>
+            <li>Linux</li>
           </ul>
         </div>
 
         <div class="skill-card">
-          <h3>Web & Tools</h3>
-          <p>Turning ideas into clean, responsive interfaces and shipping them.</p>
-          <ul>
-            <li>HTML/CSS</li>
-            <li>React</li>
+          <h3 class="skills-title-card">Web & Tools</h3>
+          <p class="skills-description-card">Turning ideas into clean, responsive interfaces and shipping them.</p>
+          <ul class="skills-tools">
+            <li>HTML</li>
+            <li>CSS</li>
             <li>Git</li>
-            <li>Figma</li>
+            <li>Figma</li>  
           </ul>
+        </div>  
+      </div>
+    </section>
+
+    <section id="projects" class=" project-sec sections-template">
+      <p class="sections-label">PROJECTS</p>
+      <h2 class="sections-sub-title">Selected work</h2>
+      <h3>Video Editing Projects</h3>
+      <div class="project-video-sections">
+        <div class="project-grid">
+          <article class="project-card">
+            <img class="project-card-img" src="images/short_form_image.png" alt="">
+            <div class="project-description">
+              <p class="project-card-label">SHORT-FORM</p>
+              <h4 class="project-card-title">Real Estate Ads</h4>
+              <p class="project-card-description">Short-form real estate ads edited for social media, using concise pacing to introduce properties and keep viewers engaged.</p>
+              <p class="project-card-footer">Type: Reel &middot; Social media edit</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-card-img" src="images/long_form_image.png" alt="">
+            <div class="project-description">
+              <p class="project-card-label">LONG-FORM</p>
+              <h4 class="project-card-title">Real Estate Tour</h4>
+              <p class="project-card-description">A longer property-tour edit prepared for YouTube and web embedding, presenting the space in a clear, easy-to-follow flow.</p>
+              <p class="project-card-footer">Type: Youtube &middot; Web Embed</p>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <img class="project-card-img" src="images/event_form_image.png" alt="">
+            <div class="project-description">
+              <p class="project-card-label">EVENT</p>
+              <h4 class="project-card-title">Business Opening Ads</h4>
+              <p class="project-card-description">A business-opening highlight film that captures key moments from the event and turns them into a concise promotional recap.</p>
+              <p class="project-card-footer">Type: Event &middot; Highlight film</p>
+            </div>
+          </article>
         </div>
       </div>
-    </section>
 
-    <section id="projects">
-      <p>PROJECTS</p>
-      <h2>Selected work</h2>
-      <div class="projects-grid">
-        <article class="project-card">
-          <p>VIDEO</p>
-          <h3>TSU Org Recap Series</h3>
-          <p>A recurring highlight reel edited for a campus organization — pacing tuned for reach on Reels and TikTok.</p>
-          <p>12 episodes &middot; 40k+ views </p>
-        </article>
+    
+      <div class="project-programming-section">
+        <h3>Programming Project</h3>
+        <div class="project-grid">
+          <article class="project-card">
+            <img class="project-card-img" src="images/about_me_project.png" alt="">
+            <div class="project-description">
+              <p class="project-card-label">WEB</p>
+              <h4 class="project-card-title">Portfolio Website</h4>
+              <p class="project-card-description">A personal portfolio website built with HTML and CSS to showcase my video-editing work, programming projects, skills, and contact details.</p>
+              <p class="project-card-footer">Tools: HTML &middot; CSS </p> 
+            </div>
+          </article>
 
-        <article class="project-card">
-          <p>WEB</p>
-          <h3>Wedding & Event Films</h3>
-          <p>Freelance client work — cinematic same-day edits with color grading and licensed music.</p>
-          <p>Freelance &middot; 2024-present </p>
-        </article>
+          <article class="project-card">
+            <img class="project-card-img" src="images/pos_project.png" alt="">
+            <div class="project-description">
+              <p class="project-card-label">APP</p>
+              <h4 class="project-card-title">InvenTrack</h4>
+              <p class="project-card-description">An inventory-tracking desktop application built in Visual Studio with VB.NET, focused on organizing item and stock information.</p>
+              <p class="project-card-footer">Tools: Visual Studio &middot; VB.NET</p>
+            </div>
+          </article>
 
-        <article class="project-card">
-          <p>WEB</p>
-          <h3>StudyPlan Scheduler</h3>
-          <p>A course project that generates weekly study blocks from a list of subjects and deadlines.</p>
-          <p>Python &middot; Flask </p>
+          <article class="project-card">
+            <img class="project-card-img" src="images/github_exercise.png" alt="">
+            <div class="project-description">
+              <p class="project-card-label">REPO</p>
+              <h4 class="project-card-title">Git & Github</h4>
+              <p class="project-card-description">Git & GitHubA Git and GitHub practice repository used to build familiarity with version control while organizing and sharing code work.</p>
+              <p class="project-card-footer">Tools: Git &middot; Github</p>
+          </div>
         </article>
-
-        <article class="project-card">
-          <p>WEB</p>
-          <h3>Portfolio & Landing Pages</h3>
-          <p>Handful of responsive marketing pages built from scratch with semantic HTML and CSS.</p>
-          <p>HTML &middot; CSS &middot; CSS  </p>
-        </article>
+        </div>
       </div>
+        
     </section>
 
-    <section id="education">
+    <!-- <section id="education">
       <p>EDUCATION & INTEREST</p>
       <h2>Background</h2>
       <div class="education-grid">
@@ -153,23 +202,31 @@
           </ul>
         </div>
       </div>
-    </section>
+    </section> -->
     
-    <section id="contact">
-      <p>CONTACT</p>
-      <h2>Have a project in mind? Let's make it.</h2>
-      <p>Whether it’s an edit, a small web build, or a collaboration — my inbox is open.</p>
-      <a href="mailto:aaronmosespangilinan@gmail.com">aaronmosespangilinan@gmail.com</a>
-      <a href="#home">Back to top</a>
+    <section id="contact" class="contact-section sections-template">
+      <div class="contact-card">
+        <p class="sections-label">CONTACT</p>
+        <h2>Have a project in mind? Let's make it.</h2>
+        <p class="contact-description">Whether it’s an edit, a small web build, or a collaboration — my inbox is open.</p>
+        <div class="contact-button">
+          <a class="email-button" href="mailto:aaronmosespangilinan@gmail.com">aaronmosespangilinan@gmail.com</a>
+          <a class="top-button" href="#home">Back to top</a>
+        </div>
+        
+      </div>
     </section>
   </main>
   <!-- FOOTER -->
-  <footer>
-    <p>Aaron.Pangilinan</p>
-    <p>© 2026 Aaron Pangilinan. Built with care.</p>
-    <a href="#" target="_blank">Youtube</a>
-    <a href="#" target="_blank">LinkedIn</a>
-    <a href="#" target="_blank">GitHub</a>
+  <hr class="footer-margin">
+  <footer class="footer-section">
+    <p class="footer-name"><strong>Aaron.Pangilinan</strong></p>
+    <p class="footer-credits">© 2026 Aaron Pangilinan. Built with care.</p>
+    <div class="footer-links">
+      <a href="https://www.youtube.com/@aaronmosesdpangilinan5096" target="_blank">Youtube</a>
+      <a href="https://www.linkedin.com/in/aaron-pangilinan-b70107352" target="_blank">LinkedIn</a>
+      <a href="https://github.com/aaronmpangilinan" target="_blank">GitHub</a>
+    </div>
   </footer>
 </body>
 </html>
