@@ -213,6 +213,7 @@ header hr{
 .project-card-img{
   width: 100%;
   height: 200px;
+  object-fit: cover;
 }
 .project-card-label{
   margin: 0px;
@@ -261,7 +262,7 @@ header hr{
 }
 .contact-description{
   font-size: 16px;
-  margin:16px 264px 0px;
+
 }
 .contact-button{
   margin: 32px 0px 0px;
@@ -364,6 +365,9 @@ header hr{
   .project-grid{
     grid-template-columns: 1fr;
   }
+  .project-card-img{
+    object-fit: cover;
+  }
   .contact-card{
     text-align: center;
     padding: 80px 22px;
@@ -380,6 +384,7 @@ header hr{
   }
   .email-button{
     font-size: 13px;
+    align-self: center;
   }
   .top-button{
     font-size: 13px;
@@ -391,8 +396,58 @@ header hr{
     flex-direction: column;
   }
 }
+@media(min-width:768px) and (max-width: 1280px){
+  
+  nav{
+    flex-direction: column;
+    gap: 25px;
+  }
+ .hero{
+  flex-direction: column;
+  text-align: center;
+  padding: 96px 11%;
+ } 
+ .hero-label{
+  margin-inline: auto;
+ }
+ .hero-buttons{
+  justify-content: center;
+ }
+ .sections-template{
+  padding: 96px 11%;
+ } 
+ .about-descriptions{
+  flex-direction: column;
+ }
+ .skills-grid{
+  grid-template-columns: 1fr 1fr;
+ }
+ .project-grid{
+  grid-template-columns: 1fr 1fr;
+ }
+ .project-card-img{
+  object-fit: cover;
+  display: block;
+ }
+ 
+ .contact-description{
+  margin: 16px;
+ }
+ .contact-button{
+  flex-direction: column;
+ }
+ .email-button{
+  align-self: center;
+ }
+ .top-button{
+  align-self: center;
+ }
+ .footer-section{
+    margin:0px;
+    padding-top:16px 16px;
 
-
+  }
+}
 
 
 
