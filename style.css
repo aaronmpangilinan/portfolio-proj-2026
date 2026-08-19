@@ -31,6 +31,10 @@ nav{
 nav a{
   text-decoration: none;
   color: #10192e;
+  transition: color 0.15s;
+}
+nav a:hover{
+  color: #2563eb;
 }
 header hr{
   border: none;
@@ -70,6 +74,7 @@ header hr{
   text-align: center;
   border: solid 1px #e5e7eb;
   font-weight: bold;
+  
 }
 
 .desc-image{
@@ -95,11 +100,15 @@ header hr{
   background-color: #2563eb;
   color: white;
   border-color: #2563eb;
+  transition: background-color 0.15s, color 0.15s;
 }
 .hero-view-button:hover{
   background-color: white;
   color: #2563eb;
 
+}
+.hero-get-button{
+  transition: border-color 0.15s, color 0.15s;
 }
 .hero-get-button:hover{
   border-color: #2563eb;
@@ -123,6 +132,7 @@ header hr{
   font-size: 12px;
   margin: 0;
   color: #2563eb;
+  font-weight: bold;
 }
 .sections-sub-title{
   margin-top: 12px;
@@ -132,10 +142,7 @@ header hr{
 .about-descriptions p{
   flex: 1;
 }
-/* .skills-sec{
-  padding: 96px 16%;
-  border-top: solid 1px #e5e7eb;
-} */
+
 .skills-heading{
   margin-bottom: 56px;
 }
@@ -143,9 +150,11 @@ header hr{
   background-color: white;
   border: solid 1px #e5e7eb;
   padding: 28px;
-  /* max-width: 352px; */
   border-radius: 24px;  
-  /* margin:1px; */
+  transition: transform 0.15s;
+}
+.skill-card:hover{
+  transform: translateY(-4px);
 }
 .skills-grid{
   display: grid;
@@ -183,6 +192,14 @@ header hr{
   border: solid 1px #e5e7eb;
   border-radius: 24px;
   overflow: hidden;
+  transition: transform 0.15s
+}
+.project-card:hover{
+  transform: translateY(-4px);
+}
+.project-link{
+  text-decoration: none;
+  color: #10192e;
 }
 .project-grid{
   display: grid;
@@ -260,6 +277,7 @@ header hr{
 }
 .top-button{
   border: solid 1px #e5e7eb;
+  transition: background-color 0.15s;
   
 }
 .top-button:hover{
@@ -267,7 +285,8 @@ header hr{
 }
 .email-button{
   background-color: #2563eb;
-  border:none;
+  border: solid 1px transparent;
+  transition: background-color 0.15s, border 0.15s;
   
 }
 .email-button:hover{
@@ -296,6 +315,10 @@ header hr{
   text-decoration: none;
   color: #10192e;
   font-size: 14px;
+  transition: color 0.15s;
+}
+.footer-links a:hover{
+  color:#2563eb;
 }
 
 @media (max-width: 767px){
